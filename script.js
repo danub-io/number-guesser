@@ -37,22 +37,22 @@ function compareGuesses(guessOne, guessTwo, guessThree) {
     // console.log(computerDif);
 
     if (humanDif < computerDif) {
-        return true
+      winnerString = 'human wins';
+      return true
     } else {
-        return false
+      winnerString = 'computer wins';
+      return false
     } 
 };
 
 const updateScore = () => {
     if (compareGuesses() === true) {
-        winnerString = 'human wins';
-        return winnerString
         humanScore++;
+        return winnerString;     
     } else { 
-        winnerString = 'computer wins';
-        return winnerString
         computerScore++;
-    }
+        return winnerString;
+    };
 }; 
 
 const advanceRound = () => 
