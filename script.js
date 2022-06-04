@@ -55,6 +55,3 @@ const updateScore = () => {
 
 const advanceRound = () => 
     currentRoundNumber++
-
-console.log(advanceRound());
-console.log(updateScore());
