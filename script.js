@@ -47,9 +47,11 @@ const updateScore = () => {
     if (compareGuesses() === true) {
         winnerString = 'human wins';
         return winnerString
+        humanScore++;
     } else { 
         winnerString = 'computer wins';
         return winnerString
+        computerScore++;
     }
 }; 
 
